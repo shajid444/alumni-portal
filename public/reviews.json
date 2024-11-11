@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Sajid Ahmed",
+        "details": "Alumnus from North South University with a major in Computer Science. Currently working as a Software Engineer at Tech Solutions Ltd.",
+        "rating": 4.7
+    },
+    {
+        "id": 2,
+        "name": "Nabila Rahman",
+        "details": "Graduated in Electrical and Electronic Engineering. Currently a Project Manager at Green Energy Solutions.",
+        "rating": 4.5
+    },
+    {
+        "id": 3,
+        "name": "Farhan Ali",
+        "details": "Business Administration graduate specializing in marketing. Works as a Marketing Specialist at Global Marketers Inc.",
+        "rating": 4.3
+    },
+    {
+        "id": 4,
+        "name": "Raisa Khan",
+        "details": "Economics graduate now employed as a Financial Analyst at BD Finance.",
+        "rating": 4.6
+    },
+    {
+        "id": 5,
+        "name": "Ahmed Reza",
+        "details": "Civil Engineering alumnus and Site Engineer at ABC Constructions.",
+        "rating": 4.2
+    },
+    {
+        "id": 6,
+        "name": "Maya Islam",
+        "details": "Biochemistry graduate working as a Lab Researcher at MedLab Research Institute.",
+        "rating": 4.8
+    },
+    {
+        "id": 7,
+        "name": "Tanvir Hossain",
+        "details": "Mathematics graduate working as a Data Analyst at FinTech Solutions.",
+        "rating": 4.4
+    },
+    {
+        "id": 8,
+        "name": "Zara Chowdhury",
+        "details": "Political Science graduate, currently employed as a Policy Analyst at Policy Research BD.",
+        "rating": 4.7
+    },
+    {
+        "id": 9,
+        "name": "Adnan Karim",
+        "details": "Electrical Engineering graduate and Network Engineer at Telecom Solutions BD.",
+        "rating": 4.3
+    },
+    {
+        "id": 10,
+        "name": "Shamim Hossain",
+        "details": "Business Administration graduate, now Operations Manager at Express Logistics.",
+        "rating": 4.1
+    },
+    {
+        "id": 11,
+        "name": "Fahmida Noor",
+        "details": "English Literature graduate working as a Content Writer at Creative Media.",
+        "rating": 4.5
+    },
+    {
+        "id": 12,
+        "name": "Rakibul Hasan",
+        "details": "Environmental Science graduate and Environmental Consultant at Eco Consult BD.",
+        "rating": 4.6
+    },
+    {
+        "id": 13,
+        "name": "Mahbub Alam",
+        "details": "Pharmacy graduate, currently working as a Pharmacist at MediCare Pharmacy.",
+        "rating": 4.7
+    },
+    {
+        "id": 14,
+        "name": "Lamia Begum",
+        "details": "Accounting graduate employed as an Accountant at Finance Hub BD.",
+        "rating": 4.4
+    },
+    {
+        "id": 15,
+        "name": "Sadia Iqbal",
+        "details": "Public Health graduate now working as a Health Educator at Health Initiative BD.",
+        "rating": 4.5
+    }
+]

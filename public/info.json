@@ -1,0 +1,274 @@
+[
+    {
+        "name": "Sajid Ahmed",
+        "nsu_id": "2011057622",
+        "major_subject": "Computer Science and Engineering",
+        "department": "School of Engineering and Physical Sciences",
+        "graduation_year": 2023,
+        "current_occupation": {
+            "job_title": "Software Engineer",
+            "company": "Tech Solutions Ltd."
+        },
+        "contact_information": {
+            "email": "sajid.ahmed@example.com",
+            "phone": "+8801712345678",
+            "linkedin": "https://www.linkedin.com/in/sajidahmed"
+        },
+        "image_url": "https://example.com/images/sajid_ahmed.jpg"
+    },
+    {
+        "name": "Nabila Rahman",
+        "nsu_id": "1812049321",
+        "major_subject": "Electrical and Electronic Engineering",
+        "department": "School of Engineering and Physical Sciences",
+        "graduation_year": 2021,
+        "current_occupation": {
+            "job_title": "Project Manager",
+            "company": "Green Energy Solutions"
+        },
+        "contact_information": {
+            "email": "nabila.rahman@example.com",
+            "phone": "+8801719876543",
+            "linkedin": "https://www.linkedin.com/in/nabilarahman"
+        },
+        "image_url": "https://example.com/images/nabila_rahman.jpg"
+    },
+    {
+        "name": "Farhan Ali",
+        "nsu_id": "1711034512",
+        "major_subject": "Business Administration",
+        "department": "School of Business and Economics",
+        "graduation_year": 2020,
+        "current_occupation": {
+            "job_title": "Marketing Specialist",
+            "company": "Global Marketers Inc."
+        },
+        "contact_information": {
+            "email": "farhan.ali@example.com",
+            "phone": "+8801712341234",
+            "linkedin": "https://www.linkedin.com/in/farhanali"
+        },
+        "image_url": "https://example.com/images/farhan_ali.jpg"
+    },
+    {
+        "name": "Raisa Khan",
+        "nsu_id": "1911045632",
+        "major_subject": "Economics",
+        "department": "School of Humanities and Social Sciences",
+        "graduation_year": 2022,
+        "current_occupation": {
+            "job_title": "Financial Analyst",
+            "company": "BD Finance"
+        },
+        "contact_information": {
+            "email": "raisa.khan@example.com",
+            "phone": "+8801712123432",
+            "linkedin": "https://www.linkedin.com/in/raisakhan"
+        },
+        "image_url": "https://example.com/images/raisa_khan.jpg"
+    },
+    {
+        "name": "Ahmed Reza",
+        "nsu_id": "1512039876",
+        "major_subject": "Civil Engineering",
+        "department": "School of Engineering and Physical Sciences",
+        "graduation_year": 2019,
+        "current_occupation": {
+            "job_title": "Site Engineer",
+            "company": "ABC Constructions"
+        },
+        "contact_information": {
+            "email": "ahmed.reza@example.com",
+            "phone": "+8801712234455",
+            "linkedin": "https://www.linkedin.com/in/ahmedreza"
+        },
+        "image_url": "https://example.com/images/ahmed_reza.jpg"
+    },
+    {
+        "name": "Maya Islam",
+        "nsu_id": "2011056341",
+        "major_subject": "Biochemistry",
+        "department": "School of Health and Life Sciences",
+        "graduation_year": 2023,
+        "current_occupation": {
+            "job_title": "Lab Researcher",
+            "company": "MedLab Research Institute"
+        },
+        "contact_information": {
+            "email": "maya.islam@example.com",
+            "phone": "+8801712456789",
+            "linkedin": "https://www.linkedin.com/in/mayaislam"
+        },
+        "image_url": "https://example.com/images/maya_islam.jpg"
+    },
+    {
+        "name": "Tanvir Hossain",
+        "nsu_id": "1611098765",
+        "major_subject": "Mathematics",
+        "department": "School of Humanities and Social Sciences",
+        "graduation_year": 2018,
+        "current_occupation": {
+            "job_title": "Data Analyst",
+            "company": "FinTech Solutions"
+        },
+        "contact_information": {
+            "email": "tanvir.hossain@example.com",
+            "phone": "+8801712345567",
+            "linkedin": "https://www.linkedin.com/in/tanvirhossain"
+        },
+        "image_url": "https://example.com/images/tanvir_hossain.jpg"
+    },
+    {
+        "name": "Zara Chowdhury",
+        "nsu_id": "1711054689",
+        "major_subject": "Political Science",
+        "department": "School of Humanities and Social Sciences",
+        "graduation_year": 2020,
+        "current_occupation": {
+            "job_title": "Policy Analyst",
+            "company": "Policy Research BD"
+        },
+        "contact_information": {
+            "email": "zara.chowdhury@example.com",
+            "phone": "+8801719988776",
+            "linkedin": "https://www.linkedin.com/in/zarachowdhury"
+        },
+        "image_url": "https://example.com/images/zara_chowdhury.jpg"
+    },
+    {
+        "name": "Adnan Karim",
+        "nsu_id": "1411045672",
+        "major_subject": "Electrical Engineering",
+        "department": "School of Engineering and Physical Sciences",
+        "graduation_year": 2017,
+        "current_occupation": {
+            "job_title": "Network Engineer",
+            "company": "Telecom Solutions BD"
+        },
+        "contact_information": {
+            "email": "adnan.karim@example.com",
+            "phone": "+8801712112234",
+            "linkedin": "https://www.linkedin.com/in/adnankarim"
+        },
+        "image_url": "https://example.com/images/adnan_karim.jpg"
+    },
+    {
+        "name": "Shamim Hossain",
+        "nsu_id": "1311048765",
+        "major_subject": "Business Administration",
+        "department": "School of Business and Economics",
+        "graduation_year": 2016,
+        "current_occupation": {
+            "job_title": "Operations Manager",
+            "company": "Express Logistics"
+        },
+        "contact_information": {
+            "email": "shamim.hossain@example.com",
+            "phone": "+8801712344343",
+            "linkedin": "https://www.linkedin.com/in/shamimhossain"
+        },
+        "image_url": "https://example.com/images/shamim_hossain.jpg"
+    },
+    {
+        "name": "Fahmida Noor",
+        "nsu_id": "1911053456",
+        "major_subject": "English Literature",
+        "department": "School of Humanities and Social Sciences",
+        "graduation_year": 2022,
+        "current_occupation": {
+            "job_title": "Content Writer",
+            "company": "Creative Media"
+        },
+        "contact_information": {
+            "email": "fahmida.noor@example.com",
+            "phone": "+8801712233344",
+            "linkedin": "https://www.linkedin.com/in/fahmidanoor"
+        },
+        "image_url": "https://example.com/images/fahmida_noor.jpg"
+    },
+    {
+        "name": "Rakibul Hasan",
+        "nsu_id": "1211065432",
+        "major_subject": "Environmental Science",
+        "department": "School of Health and Life Sciences",
+        "graduation_year": 2015,
+        "current_occupation": {
+            "job_title": "Environmental Consultant",
+            "company": "Eco Consult BD"
+        },
+        "contact_information": {
+            "email": "rakibul.hasan@example.com",
+            "phone": "+8801711122334",
+            "linkedin": "https://www.linkedin.com/in/rakibulhasan"
+        },
+        "image_url": "https://example.com/images/rakibul_hasan.jpg"
+    },
+    {
+        "name": "Mahbub Alam",
+        "nsu_id": "1511051234",
+        "major_subject": "Pharmacy",
+        "department": "School of Health and Life Sciences",
+        "graduation_year": 2019,
+        "current_occupation": {
+            "job_title": "Pharmacist",
+            "company": "MediCare Pharmacy"
+        },
+        "contact_information": {
+            "email": "mahbub.alam@example.com",
+            "phone": "+8801714455566",
+            "linkedin": "https://www.linkedin.com/in/mahbubalam"
+        },
+        "image_url": "https://example.com/images/mahbub_alam.jpg"
+    },
+    {
+        "name": "Lamia Begum",
+        "nsu_id": "1811098765",
+        "major_subject": "Accounting",
+        "department": "School of Business and Economics",
+        "graduation_year": 2021,
+        "current_occupation": {
+            "job_title": "Accountant",
+            "company": "Finance Hub BD"
+        },
+        "contact_information": {
+            "email": "lamia.begum@example.com",
+            "phone": "+8801712233445",
+            "linkedin": "https://www.linkedin.com/in/lamiabegum"
+        },
+        "image_url": "https://example.com/images/lamia_begum.jpg"
+    },
+    {
+        "name": "Sadia Iqbal",
+        "nsu_id": "2011049876",
+        "major_subject": "Public Health",
+        "department": "School of Health and Life Sciences",
+        "graduation_year": 2023,
+        "current_occupation": {
+            "job_title": "Health Educator",
+            "company": "Health Initiative BD"
+        },
+        "contact_information": {
+            "email": "sadia.iqbal@example.com",
+            "phone": "+8801712349988",
+            "linkedin": "https://www.linkedin.com/in/sadiaqbal"
+        },
+        "image_url": "https://example.com/images/sadia_iqbal.jpg"
+    },
+    {
+        "name": "Zahin Chowdhury",
+        "nsu_id": "1811065432",
+        "major_subject": "Architecture",
+        "department": "School of Engineering and Physical Sciences",
+        "graduation_year": 2021,
+        "current_occupation": {
+            "job_title": "Architect",
+            "company": "Design Studio BD"
+        },
+        "contact_information": {
+            "email": "zahin.chowdhury@example.com",
+            "phone": "+8801719988775",
+            "linkedin": "https://www.linkedin.com/in/zahinchowdhury"
+        },
+        "image_url": "https://example.com/images/zahin_chowdhury.jpg"
+    }
+]
