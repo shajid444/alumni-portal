@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react";
 import AlumniCard from "./AlumniCard";
+import useInfo from "../../Hooks/useInfo";
 
 
 const Alumni = () => {
+    const [info] = useInfo();
 
-    const [info, setInfo]= useState([]);
+    // const [info, setInfo]= useState([]);
 
-    useEffect( ()=>{
-        fetch('info.json')
-        .then(res => res.json())
-        .then(data =>setInfo(data) )
+    // useEffect( ()=>{
+    //     fetch('info.json')
+    //     .then(res => res.json())
+    //     .then(data =>setInfo(data) )
 
 
-    },[])
+    // },[])
     // console.log(info);
 
 

@@ -3,9 +3,9 @@ import { Carousel } from 'react-responsive-carousel';
 
 const Banner = () => {
     return (
-        <Carousel>
+        <Carousel >
             <div>
-                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3Dz" />
+                <img src="https://i.ibb.co.com/QNKvr6Z/why-nsu.jpg" />
               
             </div>
             <div>
