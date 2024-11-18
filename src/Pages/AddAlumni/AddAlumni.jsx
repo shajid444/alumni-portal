@@ -1,17 +1,70 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Helmet } from 'react-helmet-async';
+// import useAuth from '../../Hooks/useAuth';
+import Swal from 'sweetalert2';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const AddAlumni = () => {
+    //---------------------------------
+
+    const { user } = useContext(AuthContext);
+    // console.log(user.displayName, user.email);
+    const { displayName, email } = user;
+
+    const addAlumni = event => {
+        event.preventDefault();
+        const form = event.target;
+
+        const photo = form.photo.value;
+        const name = form.name.value;
+        const nsu_id = form.nsu_id.value;
+        const major_subject = form.major_subject.value;
+        const graduation_year = form.graduation_year.value;
+        const department = form.department.value;
+        
+
+
+        const item = { photo, name, nsu_id, major_subject, graduation_year, department,  displayName, email };
+        console.log(item);
+
+        fetch(`http://localhost:5000/info`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(item)
+        }).then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    // form.reset;
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Alumni added successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+
+                }
+            })
+
+
+    }
+
+
+
+
+    //------------------------------------
     return (
         <section className="p-6 ">
             <Helmet>
-            <title>Omiza/Add Food</title>
-        </Helmet>
-            <form  className="container flex flex-col mx-auto space-y-12">
+                <title>Add alumni</title>
+            </Helmet>
+            <form onSubmit={addAlumni} className="container flex flex-col mx-auto space-y-12">
                 <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm dark:bg-gray-50">
                     <div className="space-y-2 col-span-full lg:col-span-1">
-                        <p className="font-medium">Give the info about your Food</p>
-                       
+                        <p className="font-medium">Give your details</p>
+
                     </div>
                     <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
                         <div className="col-span-full sm:col-span-6">
@@ -20,34 +73,31 @@ const AddAlumni = () => {
                                 name="photo" placeholder="photo url" className="w-full rounded-md focus:ring focus:ring-opacity-75  focus:dark:ring-violet-600 dark:border-gray-300" />
                         </div>
                         <div className="col-span-full sm:col-span-3">
-                            <label htmlFor="food_name" className="text-sm">Food Name</label>
+                            <label htmlFor="name" className="text-sm">Name</label>
                             <input id="" type="text"
-                                name="food_name" placeholder="food_name" className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:border-gray-300" />
+                                name="name" placeholder="name" className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:border-gray-300" />
                         </div>
                         <div className="col-span-full sm:col-span-3">
-                            <label htmlFor="country_Name" className="text-sm">country_Name</label>
-                            <input id="country_Name" type="text"
-                                name="country_name" placeholder="country_Name" className="w-full rounded-md focus:ring focus:ring-opacity-75  focus:dark:ring-violet-600 dark:border-gray-300" />
+                            <label htmlFor="nsu_id" className="text-sm">nsu_id</label>
+                            <input id="nsu_id" type="text"
+                                name="nsu_id" placeholder="nsu_id" className="w-full rounded-md focus:ring focus:ring-opacity-75  focus:dark:ring-violet-600 dark:border-gray-300" />
                         </div>
                         <div className="col-span-full sm:col-span-3">
-                            <label htmlFor="food_catagory" className="text-sm">food_catagory</label>
-                            <input id="food_catagory" type="text"
-                                name="food_catagory" placeholder="food_catagory" className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:border-gray-300" />
+                            <label htmlFor="major_subject" className="text-sm">major_subject</label>
+                            <input id="major_subject" type="text"
+                                name="major_subject" placeholder="major_subject" className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:border-gray-300" />
                         </div>
                         <div className="col-span-full sm:col-span-3">
-                            <label htmlFor="quantity" className="text-sm">Quantity</label>
-                            <input id="quantity" type="text" name="quantity" placeholder="Quantity" className="w-full rounded-md focus:ring focus:ring-opacity-75  focus:dark:ring-violet-600 dark:border-gray-300" />
+                            <label htmlFor="graduation_year" className="text-sm">graduation_year</label>
+                            <input id="graduation_year" type="text" name="graduation_year" placeholder="graduation_year" className="w-full rounded-md focus:ring focus:ring-opacity-75  focus:dark:ring-violet-600 dark:border-gray-300" />
                         </div>
-                        <div className="col-span-full">
-                            <label htmlFor="short-description" className="text-sm">short description</label>
-                            <input id="short-description" type="text" name="shortDescription" placeholder="short description" className="w-full h-20 text-center rounded-md focus:ring focus:ring-opacity-75  focus:dark:ring-violet-600 dark:border-gray-300" />
-                        </div>
+
                         <div className="col-span-full sm:col-span-2">
-                            <label htmlFor="price" className="text-sm">price</label>
-                            <input id="price" type="text" name="price" placeholder="price" className="w-full rounded-md text-center focus:ring focus:ring-opacity-75  focus:dark:ring-violet-600 dark:border-gray-300" />
+                            <label htmlFor="department" className="text-sm">department</label>
+                            <input id="department" type="text" name="department" placeholder="department" className="w-full rounded-md text-center focus:ring focus:ring-opacity-75  focus:dark:ring-violet-600 dark:border-gray-300" />
                         </div>
-                        
-                      
+
+
 
                     </div>
                 </fieldset>
@@ -58,7 +108,7 @@ const AddAlumni = () => {
                     </div>
                     <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
                         <div className="col-span-full sm:col-span-3">
-                            <label htmlFor="username"  className="text-sm">Username</label>
+                            <label htmlFor="username" className="text-sm">Username</label>
                             <input id="username" type="text"
                                 name="username" placeholder="Username" defaultValue='username' className="w-full rounded-md text-center focus:ring focus:ring-opacity-75  focus:dark:ring-violet-600 dark:border-gray-300" />
                         </div>

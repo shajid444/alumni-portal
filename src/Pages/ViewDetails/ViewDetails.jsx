@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 import useInfo from '../../Hooks/useInfo';
 import { Helmet } from 'react-helmet-async';
 
@@ -7,14 +7,32 @@ const ViewDetails = () => {
     const id = useParams();
 
     const [info] = useInfo();
+    // const info = useLoaderData();
+    // const [information, setInformation] = useState([]);
+
+    // const [loading, setLoading] = useState(true);
+
+    // useEffect(() => {
+    //     fetch('http://localhost:5000/info')
+    //         .then(res => res.json())
+    //         .then(data => {
+                
+    //             setInformation(data);
+    //             // setLoading(false);
+    //         });
+
+
+    // }, [])
     console.log(info);
-    // console.log(id.item);
+    console.log('id.item',id.item);
 
     const details = info.find(item => item._id === id.item);
    
-    console.log(details);
+    // console.log(details.name);
 
-    const {name, nsu_id,major_subject,department,image_url} = details;
+    // const{name, nsu_id,major_subject,department,image_url} = details;
+
+    
 
     
 
@@ -25,17 +43,17 @@ const ViewDetails = () => {
             </Helmet>
             <div className="flex justify-between pb-4 border-bottom">
                 <div className="flex items-center">
-                    <a rel="noopener noreferrer" href="#" className="mb-0 capitalize text-3xl text-primary font-bold">{name}</a>
+                    <a rel="noopener noreferrer" href="#" className="mb-0 capitalize text-3xl text-primary font-bold">name</a>
                 </div>
 
             </div>
             <div className="space-y-4">
                 <div className="space-y-2">
-                    <img src={image_url} alt="" className="block object-cover h-full object-center w-full rounded-md h-96 dark:bg-gray-500" />
+                    <img src='https://i.ibb.co.com/ZfbnQRV/muhammad-rizwan-Vnydp-Ki-CDa-Y-unsplash.jpg' alt="" className="block object-cover object-center w-full rounded-md h-96 dark:bg-gray-500" />
                     <div className="flex items-center text-base justify-around">
-                        <span className="bg-slate-400 p-3 rounded-lg">Price : {nsu_id}</span>
-                        <span className="bg-slate-400 p-3 rounded-lg">Food Origin : {department} </span>
-                        <span className="bg-slate-400  p-3 rounded-lg">Quantity : {major_subject}</span>
+                        <span className="bg-slate-400 p-3 rounded-lg">id: nsu_id</span>
+                        <span className="bg-slate-400 p-3 rounded-lg">department: details.department </span>
+                        <span className="bg-slate-400  p-3 rounded-lg">major: major_subject</span>
                     </div>
                 </div>
                 <div className="text-center bg-slate-300 p-5 rounded-md">
@@ -50,7 +68,7 @@ const ViewDetails = () => {
                     <div className="flex justify-between bg-slate-300 p-5 rounded-md">
 
                         <p className="text-xl font-semibold ">
-                            #Made BY :
+                            department
                         </p>
                         <p className="text-xl font-semibold">
                             #Catagory : 

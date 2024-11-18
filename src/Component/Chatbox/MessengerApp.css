@@ -1,0 +1,9 @@
+.messenger-app {
+    display: flex;
+    /* height: 100vh; */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  

@@ -2,6 +2,7 @@ import React from 'react';
 import SectionTitle from '../../Component/SectionTitle/SectionTitle';
 // import { Carousel } from 'react-responsive-carousel';
 import './News.css'
+import { Link } from 'react-router-dom';
 
 const News = () => {
     return (
@@ -18,10 +19,15 @@ const News = () => {
                     <p className='mb-4'>november 11, 2024</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, magnam?</p>
 
-                    <button className="btn btn-outline border-0 border-b-4 btn-primary mt-4 mb-4">Primary</button>
+
+                    <Link to='https://www.northsouth.edu/news-events'>
+                        <button className="btn btn-outline border-0 border-b-4 btn-primary mt-4 mb-4">News & Events</button>
+
+                    </Link>
+
                 </div>
             </div>
-            
+
         </div>
     );
 };

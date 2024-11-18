@@ -13,13 +13,19 @@ import Secret from "../Pages/Secret/Secret";
 import PrivateRoute from "./PrivateRoute";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
 import AddAlumni from './../Pages/AddAlumni/AddAlumni';
+import Chatbox from './../Component/Chatbox/Chatbox';
+import MessengerApp from './../Component/Chatbox/MessengerApp';
+import AdminHome from './../Pages/Admin/AdminHome';
+import Error from "../Pages/Error/Error";
+import Update from "../Pages/Update/Update";
+import AllUser from "../Pages/AllUser/AllUser";
 
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <Main />,
-        // errorElement: <ErrorPage />,
+        errorElement: <Error />,
         children: [
             {
                 path: "/",
@@ -49,6 +55,29 @@ export const router = createBrowserRouter([
                 path:'/addAlumni',
                 element:<AddAlumni></AddAlumni>,
             },
+
+            // {
+            //     path:'/chat',
+            //     element:<Chatbox></Chatbox>,
+            // },
+            {
+                path:'/chat',
+                element:<MessengerApp></MessengerApp>,
+            },
+            {
+                path:'/admin',
+                element:<AdminHome></AdminHome>,
+            },
+            {
+                path:'/user',
+                element:<AllUser></AllUser>,
+            },
+          
+            {
+                path: '/update/:id',
+                element:<Update></Update>,
+                loader : ({params})=> fetch(`http://localhost:5000/info/${params.id}`),
+              },
         ],
     },
 ]);

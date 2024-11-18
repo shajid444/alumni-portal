@@ -20,6 +20,7 @@ const Review = () => {
 
 
     }, [])
+    console.log(review);
     return (
         <div className='my-20'>
             <SectionTitle heading={'Reviews'} subHeading={'---Alumni---'}>
