@@ -47,14 +47,18 @@ export const router = createBrowserRouter([
             },
             {
                 path:'/details/:item',
-                element:<ViewDetails></ViewDetails>,
+                element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
               
             },
-            
+
             {
-                path:'/addAlumni',
-                element:<AddAlumni></AddAlumni>,
+                path: "/addAlumni",
+                element: <PrivateRoute>
+                    <AddAlumni></AddAlumni>
+                   
+                </PrivateRoute>,
             },
+            
 
             // {
             //     path:'/chat',

@@ -17,7 +17,7 @@ const AlumniCard = ({ item }) => {
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{item.name}</h2>
                 <p>NSU-ID : {item.nsu_id}</p>
-                <p className='flex justify-center items-center gap-1'><MdEmail />   not found</p>
+                <p className='flex justify-center items-center gap-1'><MdEmail />example@gmail.com</p>
                 <div className="card-actions">
                     <Link to={`/details/${item._id}`}>
 
@@ -25,10 +25,7 @@ const AlumniCard = ({ item }) => {
                     </Link>
                 </div>
                 <div className="card-actions">
-                    <Link to={`/update/${item._id}`}  >
-
-                        <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50">Update Details</button>
-                    </Link>
+                   
                 </div>
 
                 

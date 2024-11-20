@@ -26,7 +26,7 @@ createRoot(document.getElementById('root')).render(
     
       <QueryClientProvider client={queryClient}>
         <HelmetProvider>
-          <div className='max-w-screen-xl bg-gradient-to-r from-sky-500 to-indigo-500 mx-auto '>
+          <div className='max-w-screen-xl bg-slate-100 mx-auto '>
             <RouterProvider router={router} />
           </div>
         </HelmetProvider>

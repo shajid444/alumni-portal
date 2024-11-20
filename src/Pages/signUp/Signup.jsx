@@ -80,7 +80,7 @@ const Signup = () => {
 
                 <div className="space-y-1 text-sm">
                     <label htmlFor="username" className="block dark:text-gray-600">user name</label>
-                    <input type="username"   {...register("name")} name="name" id="name" placeholder="user-name" className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-teal-600" />
+                    <input type="username"   {...register("username")} name="username" id="name" placeholder="user-name" className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-teal-600" />
                     {errors.name && <span>This field is required</span>}
                 </div>
                 <div className="space-y-1 text-sm">
@@ -92,9 +92,7 @@ const Signup = () => {
                     <label htmlFor="password" className="block dark:text-gray-600">Password</label>
                     <input type="password" name="password" id="password" placeholder="Password"  {...register("password", { required: true, minLength: 6, maxLength: 20 })} className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-teal-600" />
                     {errors.password && <span>This field is required</span>}
-                    <div className="flex justify-end text-xs dark:text-gray-600">
-                        <a rel="noopener noreferrer" href="#">Forgot Password?</a>
-                    </div>
+                  
                 </div>
                 <input type="submit" className="submit block w-full p-3 text-center rounded-sm dark:text-gray-50 dark:bg-teal-600" value="Sign Up" />
 
