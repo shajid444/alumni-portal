@@ -19,6 +19,18 @@ import AdminHome from './../Pages/Admin/AdminHome';
 import Error from "../Pages/Error/Error";
 import Update from "../Pages/Update/Update";
 import AllUser from "../Pages/AllUser/AllUser";
+import Alumni from "../Pages/Alumni/Alumni";
+import About from "../Pages/About/About";
+import News from "../Pages/News/News";
+import StoryDetails from "../Pages/StoryDetails/StoryDetails";
+import StoryDetails2 from "../Pages/StoryDetails/StoryDetails2";
+import BlogsDetails from "../Pages/BlogsDetails/BlogsDetails";
+import NewsBlogsSection from "../Pages/NewsBlogsSection/NewsBlogsSection";
+import Notice from "../Pages/Notice/Notice";
+import NoticeDetails from './../Pages/Notice/NoticeDetails';
+import Job from "../Pages/Job/Job";
+import JobDetails from "../Pages/Job/JobDetails";
+import Stories from "../Pages/Stories/Stories";
 
 
 export const router = createBrowserRouter([
@@ -76,7 +88,55 @@ export const router = createBrowserRouter([
                 path:'/user',
                 element:<AllUser></AllUser>,
             },
-          
+            {
+                path:'/allAlumni',
+                element:<Alumni></Alumni>,
+            },
+            {
+                path:'/about',
+                element:<About></About>,
+            },
+            {
+                path:'/news',
+                element:<News></News>,
+            },
+            {
+                path:'/storyDetails',
+                element:<StoryDetails></StoryDetails>,
+            },
+            {
+                path:'/storyDetails2',
+                element:<StoryDetails2></StoryDetails2>,
+            },
+            {
+                path:'/blogsDetails',
+                element:<BlogsDetails></BlogsDetails>,
+            },
+            {
+                path:'/newsBlogs',
+                element:<NewsBlogsSection></NewsBlogsSection>,
+            },
+
+            {
+                path:'/notice',
+                element:<Notice></Notice>,
+            },
+            {
+                path:'/noticeDetails',
+                element:<NoticeDetails></NoticeDetails>,
+            },
+            {
+                path:'/job',
+                element:<Job></Job>,
+            },
+            {
+                path:'/jobDetails',
+                element:<JobDetails></JobDetails>,
+            },
+            {
+                path:'/stories',
+                element:<Stories></Stories>,
+            },
             {
                 path: '/update/:id',
                 element:<Update></Update>,

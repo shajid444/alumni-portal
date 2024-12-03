@@ -37,7 +37,7 @@ const Review = () => {
     }, [])
     console.log(review);
     return (
-        <div className='flex flex-col h-[400px] justify-center items-center'>
+        <div className='flex flex-col h-[400px] bg-white justify-center items-center'>
             <SectionTitle heading={'Reviews'} subHeading={'---Alumni---'}>
 
             </SectionTitle>

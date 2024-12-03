@@ -5,6 +5,9 @@ import Banner from "../Banner/Banner";
 import News from "../News/News";
 import Review from "../Review/Review";
 import Stories from "../Stories/Stories";
+import About from "../About/About";
+import Gallery from "../Gallery/Gallery";
+import NewsBlogsSection from "../NewsBlogsSection/NewsBlogsSection";
 
 
 const Home2 = () => {
@@ -23,10 +26,10 @@ const Home2 = () => {
 
             </div>
 
-            <div>
+            {/* <div>
                 <Alumni></Alumni>
 
-            </div>
+            </div> */}
           
 
 
@@ -34,11 +37,25 @@ const Home2 = () => {
                 <News></News>
 
             </div>
+
+            <div>
+                <About> </About>
+            </div>
+
+            <div>
+                <Gallery></Gallery>
+            </div>
+            <div>
+                <NewsBlogsSection></NewsBlogsSection>
+
+            </div>
+
             <div>
                 <Review></Review>
 
             </div>
 
+           
 
 
 

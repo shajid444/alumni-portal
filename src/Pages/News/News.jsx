@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const News = () => {
     return (
-        <div className='news pt-10 my-20 bg-fixed'>
+        <div className='news pt-10 rounded-xl my-20 bg-fixed'>
             <SectionTitle heading={'News section'} subHeading={'--nsu--'}>
 
             </SectionTitle>
@@ -17,7 +17,7 @@ const News = () => {
 
                 <div className='md:ml-10 my-3'>
                     <p className='mb-4'>november 11, 2024</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, magnam?</p>
+                    <p>Explore news, views and perspectives from us and your alumni community.</p>
 
 
                     <Link to='https://www.northsouth.edu/news-events'>

@@ -46,7 +46,7 @@ const Update = () => {
         
 
 
-        const item = { photo, name, nsu_id, major_subject, graduation_year, department,  displayName, email };
+        const item = { photo, name, nsu_id, major_subject, graduation_year, department};
         console.log(item);
 
         fetch(`http://localhost:5000/info/${info._id}`, {

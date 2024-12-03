@@ -16,6 +16,7 @@ import { GiSelfLove } from 'react-icons/gi';
 import { RxRocket } from 'react-icons/rx';
 import { CgCommunity } from 'react-icons/cg';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
@@ -40,7 +41,7 @@ const Banner = () => {
           <SwiperSlide>Slide 3</SwiperSlide>
          
         </Swiper> */}
-      <div className='relative mb-96 bg-slate-100'>
+      <div className='relative mb-96 bg-white'>
 
 
         <div
@@ -56,17 +57,23 @@ const Banner = () => {
                 Join a vibrant community of North South University alumni dedicated to fostering lifelong connections, advancing careers, and making a meaningful impact on society. Together, we celebrate our achievements, support each other, and look forward to a future filled with promise and possibility
               </p>
               <div className='flex gap-5 justify-center'>
-              <button className="btn btn-wide bg-[#FAB12F] ">About Us <FaArrowRight /></button>
-              <button className="btn btn-wide bg-[#FAB12F] ">All Events <FaArrowRight /></button>
+                <Link to='/about'>
+                  <button className="btn btn-wide bg-[#FAB12F] ">About Us <FaArrowRight /></button>
+                </Link>
+                <Link to='/news'>
+                <button className="btn btn-wide btn-outline btn-primary bg-white bg-opacity-40">All Events <FaArrowRight /></button>
+                </Link>
+           
+
               </div>
-              
+
             </div>
           </div>
         </div>
 
         <div className='flex flex-col justify-center items-center border bg-pink-100  absolute top-[440px] mt-10 right-10 rounded-3xl gap-5 p-5 ml-10 z-10'>
-          <h1 className='text-xl text-primary'>Join our community</h1>
-          <h1 className='text-2xl  text-primary'>Why you should join us</h1>
+          <h1 className='text-xl text-primary font-semibold border rounded-xl bg-slate-200 p-3'>Join our community</h1>
+          <h1 className='text-2xl  text-primary font-semibold'>Why you should join us</h1>
           <div className='grid grid-cols-3 gap-5 '>
             <div className="card  bg-white border border-gray-500 text-center w-96 hover transform transition-transform duration-300 hover:scale-105">
               <div className="card-body">

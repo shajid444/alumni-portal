@@ -18,31 +18,15 @@ const ViewDetails = () => {
         }
     })
 
-    // const [info] = useInfo();
-    // const info = useLoaderData();
-    // const [information, setInformation] = useState([]);
+   
+    // console.log(info);
+    // console.log('id.item', id.item);
 
-    // const [loading, setLoading] = useState(true);
+    // const details = info.find(item => item._id === id.item);
 
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/info')
-    //         .then(res => res.json())
-    //         .then(data => {
+    // console.log(details);
 
-    //             setInformation(data);
-    //             // setLoading(false);
-    //         });
-
-
-    // }, [])
-    console.log(info);
-    console.log('id.item', id.item);
-
-    const details = info.find(item => item._id === id.item);
-
-    console.log(details);
-
-    const { _id,name, nsu_id, major_subject, department, image_url } = details;
+    // const { _id,name, nsu_id, major_subject, department, image_url } = details;
 
 
 
@@ -55,21 +39,21 @@ const ViewDetails = () => {
             </Helmet>
             <div className="flex justify-between pb-4 border-bottom">
                 <div className="flex items-center">
-                    <a rel="noopener noreferrer" href="#" className="mb-0 capitalize text-3xl text-primary font-bold">{name}</a>
+                    <a rel="noopener noreferrer" href="#" className="mb-0 capitalize text-3xl text-primary font-bold">Sajid Ahmed</a>
                 </div>
 
             </div>
             <div className="space-y-4">
                 <div className="space-y-2">
-                    <img src={image_url} alt="" className="block object-cover object-center w-full rounded-md h-96 dark:bg-gray-500" />
+                    <img src='https://i.ibb.co.com/ZfbnQRV/muhammad-rizwan-Vnydp-Ki-CDa-Y-unsplash.jpg' alt="" className="block object-cover object-center w-full rounded-md h-96 dark:bg-gray-500" />
                     <div className="flex items-center text-base justify-around">
-                        <span className="bg-slate-400 p-3 rounded-lg">id: {nsu_id}</span>
-                        <span className="bg-slate-400 p-3 rounded-lg">department: {department} </span>
-                        <span className="bg-slate-400  p-3 rounded-lg">major: {major_subject}</span>
+                        <span className="bg-slate-400 p-3 rounded-lg">id: 2011057622</span>
+                        <span className="bg-slate-400 p-3 rounded-lg">department: ECE </span>
+                        <span className="bg-slate-400  p-3 rounded-lg">major: CSE</span>
                     </div>
                 </div>
                 <div className="text-center bg-slate-300 p-5 rounded-md">
-                    Description :
+                    Graduation Year: 2021
                 </div>
                 <div className="space-y-2">
                     <a rel="noopener noreferrer" href="#" className="block">
@@ -80,18 +64,13 @@ const ViewDetails = () => {
                     <div className="flex justify-between bg-slate-300 p-5 rounded-md">
 
                         <p className="text-xl font-semibold ">
-                            department : {department}
+                            department : School of Engineering and Physical Sciences
                         </p>
 
 
 
                     </div>
-                    <div>
-                        <Link to={`/update/${_id}`}  >
-
-                            <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50">Update Details</button>
-                        </Link>
-                    </div>
+                    
 
 
 

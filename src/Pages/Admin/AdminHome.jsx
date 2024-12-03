@@ -35,10 +35,10 @@ const AdminHome = () => {
                                     Payment Management </NavLink>
                             </li>
                             <li className="mb-5">
-                                <NavLink to=''>
+                                <NavLink to='/AllAlumni'>
                                     <FaAd></FaAd>
 
-                                    Banner advertise </NavLink>
+                                    All Alumni </NavLink>
                             </li>
 
                         </>
