@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutGames = () => {
     const games = [
-        { title: "Sports", image: "https://via.placeholder.com/300x200" },
-        { title: "Venues", image: "https://via.placeholder.com/300x200" },
-        { title: "Celebrating the Games", image: "https://via.placeholder.com/300x200" },
+        { title: "Sports", image: "https://i.ibb.co.com/GMbw6SX/Swimmer-in-Paris-1.jpg" },
+        { title: "Venues", image: "https://i.ibb.co.com/MV0bGcq/Aerial-Retro-Parisian-Olympic-Venue-with-Eiffel-Tower.jpg" },
+        { title: "Celebrating the Games", image: "https://i.ibb.co.com/pjjyGGG/Vibrant-Stadium-Celebration.jpg" },
     ];
 
     return (

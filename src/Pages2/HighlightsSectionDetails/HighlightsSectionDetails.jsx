@@ -9,27 +9,28 @@ const HighlightsSectionDetails = () => {
     {
       title: 'Fireworks bring an end to an incredible Closing Ceremony | Paris 2024 highlights',
       description: 'At the Stade de France, IOC President Thomas Bach and French swimming sensation Léon Marchand and other athletes blew out the Olympic flame in the lantern, as the Olympic Games are declared closed.',
-      thumbnail: 'https://via.placeholder.com/150',
+      thumbnail: 'https://i.ibb.co.com/8Bn6rMG/Stadium-Celebrations-A-Moment-of-Victory.jpg',
     },
     {
       title: 'Paris 2024 - The Recap | Olympic Games Paris 2024',
       description: 'A quick look at the most thrilling moments of the Paris 2024 Games.',
-      thumbnail: 'https://via.placeholder.com/150',
+      thumbnail: 'https://i.ibb.co.com/ncTx1Kf/Woman-Holding-Torch-at-Outdoor-Stadium-Event.jpg',
     },
     {
       title: 'Summary of the Games | Olympic Games Paris 2024',
       description: 'Experience the excitement of the Paris 2024 Games with daily sports highlights.',
-      thumbnail: 'https://via.placeholder.com/150',
+      thumbnail: 'https://i.ibb.co.com/YXX9Z6H/Female-Gymnasts-at-Competition.jpg',
+      style: { objectPosition: 'center top' },
     },
     {
       title: 'Behind the Screen | Paris 2024',
       description: 'A look behind the scenes at how OBS broadcasts the biggest sporting event in the world.',
-      thumbnail: 'https://via.placeholder.com/150',
+      thumbnail: 'https://i.ibb.co.com/gF6FPCb/Wheelchair-Basketball-Determination.jpg',
     },
     {
       title: 'Best Moments | Paris 2024',
       description: 'A look back at all the best moments of Paris 2024.',
-      thumbnail: 'https://via.placeholder.com/150',
+      thumbnail: 'https://i.ibb.co.com/rkHY7cC/Triumphant-Wheelchair-Racer-Celebrates-Victory.jpg',
     },
   ];
 
@@ -78,7 +79,12 @@ const HighlightsSectionDetails = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {videos.map((video, index) => (
             <div key={index} className="border rounded-md p-4">
-              <img src={video.thumbnail} alt={video.title} className="w-full h-40 object-cover rounded-md" />
+              <img 
+                src={video.thumbnail} 
+                alt={video.title} 
+                className="w-full h-40 object-cover rounded-md" 
+                style={video.style || {}} 
+              />
               <h3 className="font-bold mt-2">{video.title}</h3>
               <p className="text-sm text-gray-600 mt-1">{video.description}</p>
             </div>
@@ -90,5 +96,3 @@ const HighlightsSectionDetails = () => {
 };
 
 export default HighlightsSectionDetails;
-
-
