@@ -21,13 +21,13 @@ import Update from "../Pages/Update/Update";
 import AllUser from "../Pages/AllUser/AllUser";
 import Alumni from "../Pages/Alumni/Alumni";
 import About from "../Pages/About/About";
-import News from "../Pages/News/News";
+//import News from "../Pages/News/News";
 import StoryDetails from "../Pages/StoryDetails/StoryDetails";
 import StoryDetails2 from "../Pages/StoryDetails/StoryDetails2";
 import BlogsDetails from "../Pages/BlogsDetails/BlogsDetails";
-import NewsBlogsSection from "../Pages/NewsBlogsSection/NewsBlogsSection";
-import Notice from "../Pages/Notice/Notice";
-import NoticeDetails from './../Pages/Notice/NoticeDetails';
+//import NewsBlogsSection from "../Pages/NewsBlogsSection/NewsBlogsSection";
+//import Notice from "../Pages/Notice/Notice";
+//import NoticeDetails from './../Pages/Notice/NoticeDetails';
 
 
 import MedalTable from "../Pages2/MedalTable/MedalTable";
