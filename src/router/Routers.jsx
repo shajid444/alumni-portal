@@ -12,9 +12,9 @@ import privateRoute from './PrivateRoute';
 import Secret from "../Pages/Secret/Secret";
 import PrivateRoute from "./PrivateRoute";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
-import AddAlumni from './../Pages/AddAlumni/AddAlumni';
-import Chatbox from './../Component/Chatbox/Chatbox';
-import MessengerApp from './../Component/Chatbox/MessengerApp';
+
+
+
 import AdminHome from './../Pages/Admin/AdminHome';
 import Error from "../Pages/Error/Error";
 import Update from "../Pages/Update/Update";
@@ -28,9 +28,17 @@ import BlogsDetails from "../Pages/BlogsDetails/BlogsDetails";
 import NewsBlogsSection from "../Pages/NewsBlogsSection/NewsBlogsSection";
 import Notice from "../Pages/Notice/Notice";
 import NoticeDetails from './../Pages/Notice/NoticeDetails';
-import Job from "../Pages/Job/Job";
-import JobDetails from "../Pages/Job/JobDetails";
-import Stories from "../Pages/Stories/Stories";
+
+
+import MedalTable from "../Pages2/MedalTable/MedalTable";
+import PaymentForm from "../Pages2/PaymentForm/PaymentForm";
+import HighlightsSectionDetails from "../Pages2/HighlightsSectionDetails/HighlightsSectionDetails";
+
+import ResultSec from "./../Pages2/ResultSec/ResultSec";
+import EventSection from "../Pages2/EventSection/EventSection";
+import AddTeamSection from "../Pages2/AddTeamSection/AddTeamSection";
+import MedalTableSection from "../Pages2/MedalTable/MedalTableSection";
+import AddProfile from "../Pages/AddProfile/AddProfile";
 
 
 export const router = createBrowserRouter([
@@ -58,28 +66,51 @@ export const router = createBrowserRouter([
                 </PrivateRoute>,
             },
             {
+                path: "/medalTable",
+                element: <MedalTable />,
+            },
+            {
+                path: "/payment",
+                element: <PaymentForm />,
+            },
+            {
+                path: "/Highlights",
+                element: <HighlightsSectionDetails/>,
+            },
+            {
+                path: "/ResultSec",
+                element: <ResultSec />,
+            },
+            {
+                path: "/EventSection",
+                element: <EventSection />,
+            },
+            {
+                path: "/addteam",
+                element: <AddTeamSection />,
+            },
+            {
+                path: "/medalsection",
+                element: <MedalTableSection />,
+            },
+            {
+                path: "/addProfile",
+                element: 
+                    <AddProfile></AddProfile>
+                   
+            },
+            // -------------------------------------------
+            {
                 path:'/details/:item',
                 element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
               
             },
 
-            {
-                path: "/addAlumni",
-                element: <PrivateRoute>
-                    <AddAlumni></AddAlumni>
-                   
-                </PrivateRoute>,
-            },
+         
             
 
-            // {
-            //     path:'/chat',
-            //     element:<Chatbox></Chatbox>,
-            // },
-            {
-                path:'/chat',
-                element:<MessengerApp></MessengerApp>,
-            },
+            
+           
             {
                 path:'/admin',
                 element:<AdminHome></AdminHome>,
@@ -96,51 +127,13 @@ export const router = createBrowserRouter([
                 path:'/about',
                 element:<About></About>,
             },
-            {
-                path:'/news',
-                element:<News></News>,
-            },
-            {
-                path:'/storyDetails',
-                element:<StoryDetails></StoryDetails>,
-            },
-            {
-                path:'/storyDetails2',
-                element:<StoryDetails2></StoryDetails2>,
-            },
-            {
-                path:'/blogsDetails',
-                element:<BlogsDetails></BlogsDetails>,
-            },
-            {
-                path:'/newsBlogs',
-                element:<NewsBlogsSection></NewsBlogsSection>,
-            },
-
-            {
-                path:'/notice',
-                element:<Notice></Notice>,
-            },
-            {
-                path:'/noticeDetails',
-                element:<NoticeDetails></NoticeDetails>,
-            },
-            {
-                path:'/job',
-                element:<Job></Job>,
-            },
-            {
-                path:'/jobDetails',
-                element:<JobDetails></JobDetails>,
-            },
-            {
-                path:'/stories',
-                element:<Stories></Stories>,
-            },
+          
+            
+           
             {
                 path: '/update/:id',
                 element:<Update></Update>,
-                loader : ({params})=> fetch(`http://localhost:5000/info/${params.id}`),
+                loader : ({params})=> fetch(`http://localhost:5000/profile/${params.id}`),
               },
         ],
     },

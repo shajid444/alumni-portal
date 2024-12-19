@@ -28,6 +28,12 @@ const AdminHome = () => {
 
                                     manage users </NavLink>
                             </li>
+                            <li className="mb-5">
+                                <NavLink to='/addProfile'>
+                                    <FaPerson></FaPerson>
+
+                                    Add Profile </NavLink>
+                            </li>
                             
                             <li className="mb-5">
                                 <NavLink to=''>
@@ -47,16 +53,21 @@ const AdminHome = () => {
 
                             <>
 
-                                {/* <li className="mb-5">
-                                    <NavLink to='/dashboard/cart'>
-                                        <FaShoppingCart></FaShoppingCart>
-                                        My Cart </NavLink>
-                                </li> */}
+                                <li className="mb-5">
+                                    <NavLink to=''>
+                                        
+                                        Sports</NavLink>
+                                </li>
 
                                 <li className="mb-5">
                                     <NavLink to=''>
-                                        <FaMoneyBill></FaMoneyBill>
-                                        Payment history </NavLink>
+                                        
+                                        Teams </NavLink>
+                                </li>
+                                <li className="mb-5">
+                                    <NavLink to=''>
+                                        
+                                        Athletics </NavLink>
                                 </li>
 
                             </>

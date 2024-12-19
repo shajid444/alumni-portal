@@ -20,7 +20,7 @@ const Alumni = () => {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 mr-4 ml-4 mb-4">
-            {info.map(item => <AlumniCard key ={item.nsu_id} item ={item}>
+            {info.map(item => <AlumniCard key ={item._id} item ={item}>
 
             </AlumniCard>)}
             
