@@ -13,6 +13,8 @@ import Faq from "../../Pages2/Faq/Faq";
 import FreeSeries from "../../Pages2/FreeSeries/FreeSeries";
 import DiscoverParalympics from "../../Pages2/DiscoverParalympics/DiscoverParalympics";
 import AboutGames from "../../Pages2/AboutGames/AboutGames";
+import Review from "../Review/Review";
+import Review2 from "../Review/Review2";
 
 
 const Home2 = () => {
@@ -54,17 +56,15 @@ const Home2 = () => {
             <div className="mt-10">
                 <AboutGames></AboutGames>
             </div>
+
+            <div className="mt-10">
+                <Review2></Review2>
+            </div>
        
 
         <div className="mt-10">
             <Faq></Faq>
         </div>
-
-
-           
-
-
-
 
         </div>
     );

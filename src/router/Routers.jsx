@@ -23,7 +23,6 @@ import Alumni from "../Pages/Alumni/Alumni";
 import About from "../Pages/About/About";
 
 
-
 import MedalTable from "../Pages2/MedalTable/MedalTable";
 import PaymentForm from "../Pages2/PaymentForm/PaymentForm";
 import HighlightsSectionDetails from "../Pages2/HighlightsSectionDetails/HighlightsSectionDetails";

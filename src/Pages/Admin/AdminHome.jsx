@@ -44,7 +44,7 @@ const AdminHome = () => {
                                 <NavLink to='/AllAlumni'>
                                     <FaAd></FaAd>
 
-                                    All Alumni </NavLink>
+                                    All Athletic </NavLink>
                             </li>
 
                         </>

@@ -34,7 +34,7 @@ const Banner2 = () => {
     {
       image: "https://i.ibb.co.com/H4JpDHQ/Sprinters-Synchrony-on-a-Sunlit-Track-1.jpg",
       text: "Don't miss the action! Get your tickets now",
-      button: "Find out more",
+      button: "Ticketing",
     },
   ];
 

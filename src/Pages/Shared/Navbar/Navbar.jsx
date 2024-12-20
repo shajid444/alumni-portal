@@ -27,7 +27,7 @@ const Navbar = () => {
 
         <li className='text-black bg-white rounded-xl  font-bold mr-2'> <Link to='/Highlights'><a>WATCH HIGHLIGHTS</a> </Link> </li>
         <li className='text-black bg-white rounded-xl  font-bold mr-2'> <Link to='/signUp'><a>SIGNUP</a> </Link> </li>
-        <li className='text-black bg-white rounded-xl  font-bold mr-2'> <Link to='/allAlumni'><a>all</a> </Link> </li>
+      
 
 
         
@@ -54,7 +54,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className=" flex justify-center items-center ">
-                    <h1 className="text-white text-2xl font-bold flex justify-center items-center">PARIS 2024</h1>
+                    <h1 className="text-white text-2xl font-bold flex justify-center items-center">PARIS OLYMPIC 2024</h1>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex ml-40">

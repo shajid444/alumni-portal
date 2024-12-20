@@ -3,14 +3,14 @@ import React from "react";
 const DiscoverParalympics = () => {
     return (
         <section className="w-full p-8">
-            <div className="max-w-7xl mx-auto bg-gray-100 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="max-w-7xl mx-auto bg-gray-100 rounded-lg border-2 border-gray-300 flex flex-col md:flex-row items-center">
                 <div className="w-full md:w-1/2">
-                    {/* Left Image Placeholder */}
-                    <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
+                    {/* Adjusted Image Placeholder */}
+                    <div className="w-full h-64 bg-gray-200 flex items-center justify-center overflow-hidden rounded-lg">
                         <img
-                            src="https://via.placeholder.com/200x200" // Replace with actual image
+                            src="https://i.ibb.co.com/8NdtTFJ/zp8irjlrzfu7s2jdault.jpg" // Image URL
                             alt="Paralympics Mascot"
-                            className="h-40"
+                            className="object-cover w-full h-full"
                         />
                     </div>
                 </div>
