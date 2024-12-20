@@ -54,21 +54,12 @@ const AdminHome = () => {
                             <>
 
                                 <li className="mb-5">
-                                    <NavLink to=''>
+                                    <NavLink to='/addteam'>
                                         
-                                        Sports</NavLink>
+                                        Profile</NavLink>
                                 </li>
 
-                                <li className="mb-5">
-                                    <NavLink to=''>
-                                        
-                                        Teams </NavLink>
-                                </li>
-                                <li className="mb-5">
-                                    <NavLink to=''>
-                                        
-                                        Athletics </NavLink>
-                                </li>
+                             
 
                             </>
                     }
