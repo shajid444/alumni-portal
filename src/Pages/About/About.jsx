@@ -6,7 +6,7 @@ const About = () => {
       {/* Left Section: Image */}
       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
         <img
-          src="https://i.ibb.co.com/zVbZrJF/design-wala-Ngj-JZ31c9-I-unsplash.jpg" // Replace with your actual image URL
+          src="https://i.ibb.co.com/pvt3WVf/IMG-7658.png" // Replace with your actual image URL
           alt="President of Alumnut"
           className="w-full h-auto rounded-lg "
         />
