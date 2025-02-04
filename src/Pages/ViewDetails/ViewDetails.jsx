@@ -6,17 +6,17 @@ import useAxiosPublic from '../../Hooks/useAxiosPublic';
 import { useQuery } from '@tanstack/react-query';
 
 const ViewDetails = () => {
-    const id = useParams();
+    // const id = useParams();
 
-    const axiosSecure = useAxiosPublic();
-    const { data: info = []} = useQuery({
+    // const axiosSecure = useAxiosPublic();
+    // const { data: info = []} = useQuery({
 
-        queryKey: ['info'],
-        queryFn: async () => {
-            const res = await axiosSecure.get('/info');
-            return res.data;
-        }
-    })
+    //     queryKey: ['info'],
+    //     queryFn: async () => {
+    //         const res = await axiosSecure.get('/info');
+    //         return res.data;
+    //     }
+    // })
 
    
     // console.log(info);
@@ -28,7 +28,8 @@ const ViewDetails = () => {
 
     // const { _id,name, nsu_id, major_subject, department, image_url } = details;
 
-
+//   <p>Gender:{item.gender} </p>
+//   <p>Nationality:{item.nationality} </p>
 
 
 

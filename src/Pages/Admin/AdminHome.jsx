@@ -28,6 +28,12 @@ const AdminHome = () => {
 
                                     manage users </NavLink>
                             </li>
+                            <li className="mb-5">
+                                <NavLink to='/addProfile'>
+                                    <FaPerson></FaPerson>
+
+                                    Add Profile </NavLink>
+                            </li>
                             
                             <li className="mb-5">
                                 <NavLink to=''>
@@ -38,7 +44,7 @@ const AdminHome = () => {
                                 <NavLink to='/AllAlumni'>
                                     <FaAd></FaAd>
 
-                                    All Alumni </NavLink>
+                                    All Athletic </NavLink>
                             </li>
 
                         </>
@@ -47,17 +53,13 @@ const AdminHome = () => {
 
                             <>
 
-                                {/* <li className="mb-5">
-                                    <NavLink to='/dashboard/cart'>
-                                        <FaShoppingCart></FaShoppingCart>
-                                        My Cart </NavLink>
-                                </li> */}
-
                                 <li className="mb-5">
-                                    <NavLink to=''>
-                                        <FaMoneyBill></FaMoneyBill>
-                                        Payment history </NavLink>
+                                    <NavLink to='/addteam'>
+                                        
+                                        Profile</NavLink>
                                 </li>
+
+                             
 
                             </>
                     }

@@ -9,7 +9,7 @@ const useInfo = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/info')
+        fetch('http://localhost:5000/profile')
             .then(res => res.json())
             .then(data => {
                 

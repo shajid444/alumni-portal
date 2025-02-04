@@ -9,8 +9,8 @@ import { Navigation } from 'swiper/modules';
 import { Rating } from '@smastrom/react-rating';
 
 import '@smastrom/react-rating/style.css'
-import useAxiosPublic from '../../Hooks/useAxiosPublic';
-import { useQuery } from '@tanstack/react-query';
+// import useAxiosPublic from '../../Hooks/useAxiosPublic';
+// import { useQuery } from '@tanstack/react-query';
 
 const Review = () => {
 
@@ -35,16 +35,16 @@ const Review = () => {
 
 
     }, [])
-    console.log(review);
+    // console.log(review._id);
     return (
         <div className='flex flex-col h-[400px] bg-white justify-center items-center'>
-            <SectionTitle heading={'Reviews'} subHeading={'---Alumni---'}>
+            <SectionTitle heading={'Reviews'} subHeading={'---Paris-Olympic-24---'}>
 
             </SectionTitle>
 
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
 
-                {review.map(review => <SwiperSlide key={review.id}>
+                {review.map(review => <SwiperSlide key={review._id}>
 
                     <div className='flex gap-5 flex-col items-center'>
                         <Rating
